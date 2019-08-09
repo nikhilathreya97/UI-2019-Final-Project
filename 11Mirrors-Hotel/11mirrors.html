@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>11 Mirrors</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="11mirrors.css">
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#hamburgerMenuId").addClass("hamburgerMenu");
+			$("#hamburgerIcon").click(function(){
+				$("#hamburgerIcon > hr:nth-child(1)").toggleClass("toggleMenuHR1");
+				$("#hamburgerIcon > hr:nth-child(2)").toggleClass("toggleMenuHR2");
+				$("#hamburgerIcon > hr:nth-child(3)").toggleClass("toggleMenuHR3");
+				$("#bgImage").toggleClass("toggleBgImg");
+				$("#hamburgerMenuId").toggleClass("toggleMenu");
+				$("#hamburgerMenuId").toggleClass("hamburgerMenu");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="mainContent">
+		<img  id="bgImage" src="bgImage.jpg">
+		<div id="headerContainer">
+			<div id="header">
+				<div id="headerLeft">
+					<div id="hamburgerIcon">
+						<hr>
+						<hr>
+						<hr>
+					</div>
+					<div class="dropdown" id="langDropDown">
+						<button class="dropdown-toggle" data-toggle="dropdown">
+							EN<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								EN
+							</li>
+							<li>
+								UK
+							</li>
+							<li>
+								RU
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div align="center" id="headerCenter">
+					<span>ELEVEN MIRRORS</span><br>
+					<span>Design Hotel</span>
+				</div>
+				<div id="headerRight">
+					<div class="dropdown" id="contactDropDown">
+						<button class="dropdown-toggle" data-toggle="dropdown">
+							HOT CALL<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<b>+38 044 581 11 11</b>
+								<hr>
+							</li>
+							<li>
+								<b>+38 050 581 11 11</b>
+								<hr>	
+							</li>
+							<li>
+								info@11mirrors-hotel.com
+								<hr>
+							</li>
+							<li>
+								<span class="fa fa-whatsapp"></span>
+								<span class="fa fa-telegram"></span>
+							</li>
+						</ul>
+					</div>
+					<div id="bookButton">
+						<button id="btnOuter">
+							<span>BOOK NOW</span>
+							<div id="btnInner"></div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div >
+			<h1>Reflecting<br>You</h1>
+		</div> -->
+	</div>
+	<div id="hamburgerMenuId">
+		<div id="hamburgerMenuContainer">
+			<div>
+				<h2>About</h2>
+				<p>About Hotel</p>
+				<p>Made by Originals</p>
+				<p>Design Hotels</p>
+				<p>Special Offers</p>
+				<p>Gallery</p>
+				<p>Virtual Tour</p>
+				<p>Neighbourhood</p>
+			</div>
+			<div>
+				<h2>Rooms</h2>
+				<p>Courtyard Standard Room</p>
+				<p>Icognito Superior Room</p>
+				<p>Desire Deluxe Room</p>
+				<p>Signature Premium Room</p>
+				<p>Lifestyle Executive Suite</p>
+			</div>
+			<div>
+				<h2>Services</h2>
+				<p>Our services</p>
+				<p>Fitness & SPA</p>
+				<p>Beauty & Wellness</p>
+				<p>Meetings & Events</p>
+				<p>Concierge</p>
+			</div>
+			<div>
+				<h2>Eat&Drink</h2>
+				<p>Rooftop Restaurant</p>
+				<p>Lobby Bar</p>
+			</div>
+			<div>
+				<h2>News</h2>
+				<p>Press Area</p>
+			</div>
+			<div>
+				<h2>Contact</h2>
+				<p>Partners</p>
+				<p>Careers</p>
+			</div>
+		</div>
+		<div id="hamburgerMenuFooter">
+			<div>
+				<p>Call to us 24/7: <u><a href="">+38 044 581 11 11</a></u></p>
+			</div>
+			<div>
+				<span>Follow us: </span>
+				<span class="fa fa-facebook"></span>
+				<span class="fa fa-google"></span>
+				<span class="fa fa-instagram"></span>
+				<span class="fa fa-twitter"></span>
+				<span class="fa fa-linkedin"></span>
+				<span class="fa fa-youtube"></span>
+			</div>
+			<div>
+				<span>
+					<img src="visa-logo.svg">
+				</span>
+				<span>
+					<img src="master-card-logo.svg">
+				</span>
+				<span>
+					<img src="maestro-logo.svg">
+				</span>
+				<span>
+					<img src="express-logo.svg">
+				</span>
+			</div>
+		</div>
+		<div id="footerImg">
+			<span>
+				<img src="footerImg.png">
+			</span>
+		</div>
+	</div>
+</body>
+</html>

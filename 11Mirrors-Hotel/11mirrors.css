@@ -1,0 +1,295 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+div{
+	align-items: center;
+}
+/* #headerContainer:hover > *{
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease;
+} */
+#bgImage{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all .5s ease;
+	z-index: -1;
+}
+#headerContainer{
+	padding: 30px 40px 30px 40px;
+	background: linear-gradient(to top,rgb(0, 0, 0,0),rgb(0, 0, 0,1));
+}
+#header{
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+}
+#langDropDown > button{
+	border: none;
+	background: none;
+}
+#langDropDown > .dropdown-menu{
+	text-align: center;
+	color: lightgray;
+	min-width: 36px;
+	font-size: 12px;
+	border: none;
+}
+#langDropDown > .dropdown-menu > li{
+	padding: 8px 16px;
+}
+#headerLeft, #headerRight{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#hamburgerIcon{
+	position: relative;
+	float: left;
+}
+#hamburgerIcon > hr{
+	border: 1px solid white;
+	width: 30px;
+	margin: 5px 0px;
+	transition: all 0.6s ease;
+	/* position: relative; */
+}
+#hamburgerIcon > hr:nth-child(2){
+	width: 15px;
+}
+#hamburgerIcon:hover > hr:nth-child(2){
+	width: 30px;
+	transition: all 0.6s ease;
+}
+#langDropDown{
+	color: white;
+	padding: 5px 0px;
+}
+#headerCenter{
+	color: white;
+	transition: all .5s ease;
+}
+#headerCenter > span:first-child{
+	font-size: 18px;
+}
+#contactDropDown{
+	color: white;
+}
+#langDropDown:hover{
+	color: lightgray;
+	transition: all 1s ease;
+}
+#headerCenter:hover{
+	color: lightgray;
+	transition: all .5s ease;
+}
+#contactDropDown > button{
+	border: none;
+	background: none;
+}
+#contactDropDown:hover > button{
+	color: lightgray;
+	transition: all 1s ease;
+}
+#contactDropDown > .dropdown-menu{
+	text-align: center;
+	color: black;
+	min-width: 200px;
+	font-size: 12px;
+	font-weight: bolder;
+	border: none;
+	padding: 20px;
+}
+#contactDropDown > .dropdown-menu > li{
+	padding: 0px;
+	margin: 0px;
+}
+#contactDropDown > .dropdown-menu > li > hr{
+	border: 1px solid black;
+	width: 0px;
+	opacity: 0;
+	transition: all .5s ease;
+}
+#contactDropDown > .dropdown-menu > li:hover > hr{
+	width: 100%;
+	opacity: 1;
+	transition: all .5s ease;
+}
+#contactDropDown > .dropdown-menu > li:last-child{
+	font-size: 24px;
+}
+#contactDropDown > .dropdown-menu > li:last-child > span{
+	padding: 0px 10px;
+}
+#contactDropDown > .dropdown-menu > li:last-child > span:hover{
+	color: gray;
+	transition: all .2s ease;
+}
+#btnOuter{
+	position: relative;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	align-items: center;
+	padding: 8px;
+	transition: all .5s ease;
+}
+#btnInner{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	z-index: -1;
+	background-color: white;
+}
+#btnOuter:hover > #btnInner{
+	animation: animateBtn .5s;
+	animation-fill-mode: forwards;
+}
+@keyframes animateBtn{
+	from {
+		height: 0px;
+	}
+	to{
+		height: 100%;
+	}
+}
+.toggleMenuHR1{
+	transform: rotate(45deg);
+	transition: all .5s ease;
+}
+.toggleMenuHR2{
+	opacity: 0;
+	transition: all .5s ease;
+}
+.toggleMenuHR3{
+	transform: rotate(-45deg);
+	transition: all .5s ease;
+}
+.toggleBgImg{
+	opacity: 0;
+	transition: all .5s ease;
+	visibility: hidden;
+}
+.toggleMenu{
+	visibility: visible;
+	opacity: 1;
+	transition: all .5s ease;
+}
+#hamburgerMenuContainer{
+	padding: 50px 40px 50px 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 60px;
+}
+#hamburgerMenuContainer > div{
+	height: 300px;
+}
+#hamburgerMenuContainer > div > h2{
+	padding-bottom: 20px;
+}
+.hamburgerMenu{
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+}
+#hamburgerMenuFooter{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* border: 1px solid black; */
+}
+#hamburgerMenuFooter > div{
+	text-align: center;
+	height: 30px;
+}
+#hamburgerMenuFooter > div:nth-child(1){
+	font-size: 16px;
+}
+#hamburgerMenuFooter > div:nth-child(2) > span{
+	font-size: 16px;
+	padding: 0px 8px;
+}
+#hamburgerMenuFooter > div:nth-child(3) > span{
+	padding: 0px 8px;
+}
+#footerImg{
+	text-align: center
+}
+#footerImg > span > img{
+	margin: 20px;
+	height: 30px;
+	width: 140px;
+}
+.hideEverthing{
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease;
+}
+.hh1{
+    
+    position: absolute;
+    top: 80px;
+    left:53%;
+    font-size: 18mm;
+    font-weight: lighter;
+}
+.gallery{
+    position: absolute;
+    top: 100px;
+    left:0;
+    width:45vw;
+    height:80vh;
+
+}
+.gallery #gall > img{
+    width:100%;
+    height: 100%;
+}
+.box1{
+  position: absolute;
+  top:310px;
+  left:30vw;
+  height: 50vh;
+  width:35vw;
+  background-color: rgba(238, 217, 177, 0.986);
+  padding: 20px;
+}
+/*.box1 h1*/
+ #box-h{
+    color: black;
+    font-size: 13mm;
+    font-weight: lighter;
+    position: relative;
+    left:30px;
+    transition:4s ease-in-out;
+}
+.box1 p{
+    position: relative;
+    left: 50px;
+    color: rgb(172, 165, 165);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4mm;
+    width: 300px;
+    font-weight: lighter;
+    top: -30px;
+ 
+
+}
+.box2{
+    position: absolute;
+    top: 180px;
+    left:55%;
+    color: rgb(172, 165, 165);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width:350px;
+    height:50px;
+    font-size: 4mm;
+    /* border: 1px solid black; */
+
+}
+.box3{
+    position:absolute;
+    top:50vh;
+    left:90%;
+}

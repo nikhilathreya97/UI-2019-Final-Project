@@ -1,0 +1,37 @@
+<span class="s1">Reflecting You</span>
+       <span class="s2"> <a href="" class="btn">Book Now</a></span>
+       <span class="s3">
+           <p>ELEVEN MIRRORS</p>
+           Design Hotel
+       </span>
+       <span class="d1">
+            <button class="dropbtn1">EN<i class="arrow down" style="color:white;"></i></button>
+            <div class="d1m">
+              <a href="#">EN</a>
+              <a href="#">UK</a>
+              <a href="#">RU</a>
+            </div>
+        </span> 
+        <span class="s4">
+           <img src="1.jpg">
+        </span>
+        
+        <span class="s5">About<br>
+            11 Mirrors</span>
+        <span class="s6">11 Mirrors is a boutique, design-driven hotel settled in Kyiv’s historical center with an exceptional sense of style, created for travelers seeking unrivaled comfort and experience.</span>
+        <span class="s7">EXPLORE HOTEL</span>
+    
+        <span class="s8"><img src="2.jpg"></span>
+        <span class="s9"><p>Courtyard Standard Room</p>
+        <span class="s10">A cozy well-designed room that takes you away from the urban hustle and provides you with the comfort and peace for a relaxing stay.
+        </span>
+        <span class="s11">BOOK NOW</span>
+        </span>
+        <span class="s12">Stay</span>
+        <span class="s13">Contemporary elegance with an urban outlook</span>
+        <span class="s14">SEE MORE</span>
+        <span class="s15"><img src="3.jpg"></span>
+        <span class="s16"><hr></span>
+        <span class="s17"></span>
+        <span class="s18">Eat <br>& Drink</span>
+        <span class="s19">Dining at 11 Mirrors Design Hotel encompasses a rooftop restaurant & bar located on the 11th floor, as well as a stylish lobby bar nestling in the mezzanine area.</span>

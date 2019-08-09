@@ -1,0 +1,574 @@
+/* html,body{
+    width=100%;
+    height=100%;
+    margin:0;
+} */
+/* body{
+    
+    background-repeat:no-repeat;
+    background-size:100%;
+    z-index:-1;
+    opacity:1;
+} */
+.s1{
+    position: absolute;
+    top:35%;
+    left:50%;
+    color:white;
+    font-size:110px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:80px;
+    font-weight:bold;
+    line-height: 112px;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+/* div{
+	align-items: center;
+} */
+/* #headerContainer:hover > *{
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease;
+} */
+#bgImage{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	transition: all .5s ease;
+	z-index: -1;
+}
+#headerContainer{
+	padding: 30px 40px 30px 40px;
+	background: linear-gradient(to top,rgb(0, 0, 0,0),rgb(0, 0, 0,1));
+}
+#header{
+	display: grid;
+	grid-template-columns: 20% 60% 20%;
+}
+#langDropDown > button{
+	border: none;
+	background: none;
+}
+#langDropDown > .dropdown-menu{
+	text-align: center;
+	color: lightgray;
+	min-width: 36px;
+	font-size: 12px;
+	border: none;
+}
+#langDropDown > .dropdown-menu > li{
+	padding: 8px 16px;
+}
+#headerLeft, #headerRight{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#hamburgerIcon{
+	position: relative;
+	float: left;
+}
+#hamburgerIcon > hr{
+	border: 1px solid white;
+	width: 30px;
+	margin: 5px 0px;
+	transition: all 0.6s ease;
+	/* position: relative; */
+}
+#hamburgerIcon > hr:nth-child(2){
+	width: 15px;
+}
+#hamburgerIcon:hover > hr:nth-child(2){
+	width: 30px;
+	transition: all 0.6s ease;
+}
+#langDropDown{
+	color: white;
+	padding: 5px 0px;
+}
+#headerCenter{
+	color: white;
+	transition: all .5s ease;
+}
+#headerCenter > span:first-child{
+	font-size: 18px;
+}
+#contactDropDown{
+	color: white;
+}
+#langDropDown:hover{
+	color: lightgray;
+	transition: all 1s ease;
+}
+#headerCenter:hover{
+	color: lightgray;
+	transition: all .5s ease;
+}
+#contactDropDown > button{
+	border: none;
+	background: none;
+}
+#contactDropDown:hover > button{
+	color: lightgray;
+	transition: all 1s ease;
+}
+#contactDropDown > .dropdown-menu{
+	text-align: center;
+	color: black;
+	min-width: 200px;
+	font-size: 12px;
+	font-weight: bolder;
+	border: none;
+	padding: 20px;
+}
+#contactDropDown > .dropdown-menu > li{
+	padding: 0px;
+	margin: 0px;
+}
+#contactDropDown > .dropdown-menu > li > hr{
+	border: 1px solid black;
+	width: 0px;
+	opacity: 0;
+	transition: all .5s ease;
+}
+#contactDropDown > .dropdown-menu > li:hover > hr{
+	width: 100%;
+	opacity: 1;
+	transition: all .5s ease;
+}
+#contactDropDown > .dropdown-menu > li:last-child{
+	font-size: 24px;
+}
+#contactDropDown > .dropdown-menu > li:last-child > span{
+	padding: 0px 10px;
+}
+#contactDropDown > .dropdown-menu > li:last-child > span:hover{
+	color: gray;
+	transition: all .2s ease;
+}
+#btnOuter{
+	position: relative;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	align-items: center;
+	padding: 8px;
+	transition: all .5s ease;
+}
+#btnInner{
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: 0px;
+	height: 0px;
+	z-index: -1;
+	background-color: white;
+}
+#btnOuter:hover > #btnInner{
+	animation: animateBtn .5s;
+	animation-fill-mode: forwards;
+}
+@keyframes animateBtn{
+	from {
+		height: 0px;
+	}
+	to{
+		height: 100%;
+	}
+}
+.toggleMenuHR1{
+	transform: rotate(45deg);
+	transition: all .5s ease;
+}
+.toggleMenuHR2{
+	opacity: 0;
+	transition: all .5s ease;
+}
+.toggleMenuHR3{
+	transform: rotate(-45deg);
+	transition: all .5s ease;
+}
+.toggleBgImg{
+	opacity: 0;
+	transition: all .5s ease;
+	visibility: hidden;
+}
+.toggleMenu{
+	visibility: visible;
+	opacity: 1;
+	transition: all .5s ease;
+}
+#hamburgerMenuContainer{
+	padding: 50px 40px 50px 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 60px;
+}
+#hamburgerMenuContainer > div{
+	height: 300px;
+}
+#hamburgerMenuContainer > div > h2{
+	padding-bottom: 20px;
+}
+.hamburgerMenu{
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+}
+#hamburgerMenuFooter{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	/* border: 1px solid black; */
+}
+#hamburgerMenuFooter > div{
+	text-align: center;
+	height: 30px;
+}
+#hamburgerMenuFooter > div:nth-child(1){
+	font-size: 16px;
+}
+#hamburgerMenuFooter > div:nth-child(2) > span{
+	font-size: 16px;
+	padding: 0px 8px;
+}
+#hamburgerMenuFooter > div:nth-child(3) > span{
+	padding: 0px 8px;
+}
+#footerImg{
+	text-align: center
+}
+#footerImg > span > img{
+	margin: 20px;
+	height: 30px;
+	width: 140px;
+}
+.hideEverthing{
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+}
+.s4{
+    position:absolute;
+    top:140%;
+    right:0%;
+    background:rgb(236, 218, 193);
+    width:60%;
+    height:950px;
+    align-content: center;
+}
+.s4 >img{
+    position:relative;
+    top:20%;
+    left:25%;
+    width:50%;
+    height:550px;
+}
+
+.s5{
+    background: transparent;
+    color:black;
+    position:absolute;
+    top:130.5%;
+    left:9%;
+    font-size:110px;
+    float:left;
+    text-align:right;
+    font-weight:bold;
+    width:auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.s6{
+    background: transparent;
+    color:rgb(138, 136, 136);
+    position: absolute;
+    top:190%;
+    left:8%;
+    font-size:18px;
+    line-height:30px;
+    width:420px;
+    overflow:hidden;
+    float:left;
+
+}
+.s7{
+    background:transparent;
+    color:rgb(138, 136, 136);
+    position: absolute;
+    top:220%;
+    left:8%;
+    font-size:18px;
+    line-height:30px;
+    width:170px;
+    overflow:hidden;
+    float:left;
+    border: 1px solid rgb(138, 136, 136);
+    border-radius:80%;
+    padding:20px;
+    text-align:center;
+}
+.s8{
+    
+    position: absolute;
+    top:300%;
+    left:0%;
+    width:50%;
+    height:900px;
+}
+.s8 > img{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.s9{margin-top:0em;
+    position: absolute;
+    top:350%;
+    left:38%;
+    right:18%;
+    background: rgb(236, 218, 193);
+    height:650px;
+    text-align: left;
+   
+}
+.s9 > p{position: relative;
+    top:8%;
+    
+    left:9%;
+    color:black;
+    font-size:90px;
+}
+.s10{
+    position:relative;
+    top:8%;
+    left:35%;
+    right:10%;
+    background: transparent;
+    color:rgb(138, 136, 136);
+    font-size:18px;
+    line-height:30px;
+    width:380px;
+    overflow:hidden;
+    float:left;
+}
+.s11{
+    position:absolute;
+   top:78%;
+    left:12%;
+    background:transparent;
+    color:rgb(138, 136, 136);
+    font-size:18px;
+    line-height:30px;
+    width:170px;
+    overflow:hidden;
+    float:left;
+    border: 1px solid rgb(138, 136, 136);
+    border-radius:80%;
+    padding:20px;
+    text-align:center;
+}
+.s12{
+    background: transparent;
+    color:black;
+    position:absolute;
+    top:292%;
+    left:58%;
+    font-size:110px;
+    float:left;
+    text-align:right;
+    font-weight:bold;
+    width:auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.s13{
+    background: transparent;
+    color:rgb(138, 136, 136);
+    position: absolute;
+    top:315%;
+    left:62%;
+    font-size:18px;
+    line-height:30px;
+    width:360px;
+    overflow:hidden;
+    float:left;
+}
+.s14{
+    position:absolute;
+   top:427%;
+    left:80%;
+    background:transparent;
+    color:rgb(138, 136, 136);
+    font-size:18px;
+    line-height:30px;
+    width:170px;
+    overflow:hidden;
+    float:left;
+    
+    padding:20px;
+    text-align:center;
+}
+.s15{
+    position:absolute;
+    top:453%;
+    left:10%;
+    right:0%;
+    height:650px;
+    width:80%;
+}
+.s15 > img{
+    width:1420px;
+    height:100%;
+}
+.s16{
+    position:absolute;
+    top:595%;
+    right:0%;
+    left:-20%;
+    background:transparent;
+    z-index:-1;
+}
+.s16 >hr{
+    transform: rotate(20deg);
+    width:100%;
+    
+}
+.s17{
+    position:absolute;
+    top:565%;
+    right:0%;
+    background:rgb(236, 218, 193);
+    width:60%;
+    height:950px;
+    align-content: center;
+}
+.s18{
+    background: transparent;
+    color:black;
+    position:absolute;
+    top:556.5%;
+    left:19%;
+    font-size:110px;
+    float:right;
+    text-align:right;
+    font-weight:bold;
+    width:auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.s19{
+    background: transparent;
+    color:rgb(138, 136, 136);
+    position: absolute;
+    top:600%;
+    left:8%;
+    font-size:18px;
+    line-height:30px;
+    width:420px;
+    overflow:hidden;
+    float:left;
+}
+.container{position:absolute;
+top:710%;
+left:0%;
+}
+.container > #myCarousel{
+    position: relative;
+    left:0%;
+}
+#myCarousel > ol{
+    position: relative;
+    left:20%;
+    align-content: center;
+    justify-content: center;
+}
+@-webkit-keyframes small1{
+    from {
+      -webkit-transform: scale(0.5, 0.5);
+    }
+    to {
+      -webkit-transform: scale(0.8, 0.8);
+    }
+  }
+  
+  @keyframes small1{
+    from {
+      transform: scale(0.5, 0.5);
+    }
+    to {
+      transform: scale(1, 1);
+    }
+  }
+  
+  .carousel-inner .item > img {
+    -webkit-animation: small1 3s;
+    animation: small1 3s;
+  }
+  
+    
+  
+  
+          
+      .text1{
+          position: absolute;
+          left: 5%;
+          top:800%;
+          text-align: right;          
+      }
+      .text1 >h1{
+        font-size:85px;
+        
+      }
+      .text2{
+          color:gray;
+          opacity: 0.8;
+          position: absolute;
+          left: 15%;
+          top:880%;
+      }
+     
+      #name{
+          border-right: white;
+          border-top: white;
+          border-left: white;
+          border-bottom: 1px solid gray;
+          width: 35%;
+          position: absolute;
+          left:60%;
+          top:875%;
+      }
+      #email{
+          border-right: white;
+          border-top: white;
+          border-left: white;
+          border-bottom: 1px solid gray;
+          width: 35%;
+          position: absolute;
+          left:60%;
+          top:880%;
+      }
+      #checkbox{
+          position: absolute;
+          left:60%;
+          top:885%;
+          height: 20px;
+          width: 20px;
+  
+      }
+      p{
+      position:absolute;
+      left:63%;
+      top:886%;
+          color:gray;
+          opacity: 0.998;
+          font-weight: normal;
+      }
+      .a1{
+          color:gray;
+  
+      }
+      .a1:hover{
+          transition: linear 0.5s;
+          opacity: 0.5;
+          color:gray
+      }
+
+      

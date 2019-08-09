@@ -1,0 +1,16 @@
+<style>
+*{
+    margin: 0px;
+    padding: 0%;
+}
+.footer{
+    text-align: center;
+    font-size: 100px;
+    color: #342b25;
+    transition: 0.2s;
+    font: inherit;
+}
+.footer:hover{
+    color: gray;
+
+}
